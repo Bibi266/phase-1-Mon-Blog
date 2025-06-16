@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Le blog de Roberte</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="#">Accueil</a></li>
+      <li><a href="#article1">Mon premier article</a></li>
+      <li><a href="#article2">Chaînage optionnel JS</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Bienvenue sur le blog de Roberte</h1>
+    <p>Mon parcours, mes découvertes, et mon apprentissage du code ✨</p>
+  </header>
+
+  <main>
+    <article id="article1">
+      <h2>Mon tout premier article</h2>
+      <p>
+        Bonjour ! Je m'appelle Roberte et je commence mon aventure dans le monde du développement web. 
+        Ce blog est mon carnet de bord technique, ici je partagerai ce que j’apprends. Merci d’être là 💻💡
+      </p>
+    </article>
+
+    <article id="article2">
+      <h2>Comprendre le chaînage optionnel en JavaScript</h2>
+      <p>
+        Aujourd’hui, j’ai appris une astuce super pratique en JavaScript : le chaînage optionnel.
+        Il permet d’accéder aux propriétés d’un objet sans risquer une erreur si une partie est <code>undefined</code>.
+        Exemple :
+      </p>
+      <pre><code>const user = { profile: { name: "Roberte" } };
+console.log(user?.profile?.name); // "Roberte"
+console.log(user?.contact?.email); // undefined, mais pas d’erreur !</code></pre>
+      <p>
+        C’est très utile quand on manipule des objets complexes ou des données venant d’une API.
+      </p>
+    </article>
+  </main>
+
+  <footer>
+    <p>©️ 2025 - Roberte apprend à coder avec passion ❤️</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
