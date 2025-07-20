@@ -31,17 +31,64 @@
     </article>
 
     <article id="article2">
-      <h2>Comprendre le chaînage optionnel en JavaScript</h2>
+      <h2>Pourquoi apprendre React aujourd’hui, c’est une bonne idée ?
+</h2>
       <p>
-        Aujourd’hui, j’ai appris une astuce super pratique en JavaScript : le chaînage optionnel.
-        Il permet d’accéder aux propriétés d’un objet sans risquer une erreur si une partie est <code>undefined</code>.
-        Exemple :
+        Aujourd’hui, React est partout : sur Facebook, Instagram, Netflix, Airbnb, ou encore WhatsApp Web. En 2025, il fait partie des compétences les plus demandées dans les métiers du web.
+
+Mais ce n’est pas juste pour les grosses boîtes : même un petit blog, une app pour gérer ses tâches ou un site portfolio peuvent très bien être développés avec React.
+
+L’écosystème est riche : tu peux utiliser React Router pour la navigation, Next.js pour le SEO et les performances, ou React Native pour créer des applis mobiles avec les mêmes bases.
+
+Et si tu débutes ? Pas de panique. La communauté React est immense, les tutoriels sont partout, et l’approche par composants est intuitive, même pour les non-développeurs.
       </p>
-      <pre><code>const user = { profile: { name: "Roberte" } };
-console.log(user?.profile?.name); // "Roberte"
-console.log(user?.contact?.email); // undefined, mais pas d’erreur !</code></pre>
+      <p>Voici un exemple de code React simple, clair, bien structuré, qui fonctionne et que tu peux utiliser pour t’entraîner ou intégrer dans un projet. Ce composant affiche un petit compteur avec deux boutons : augmenter et réinitialiser.</p>
+      <pre><code>import React, { useState } from 'react';
+
+const Counter = () => {
+  // Déclaration d'un state (état) appelé "count"
+  const [count, setCount] = useState(0);
+
+  // Fonction pour réinitialiser le compteur
+  const resetCounter = () => {
+    setCount(0);
+  };
+
+  return (
+    <div style={styles.container}>
+      <h1>Compteur : {count}</h1>
+
+      <button style={styles.button} onClick={() => setCount(count + 1)}>
+        +1
+      </button>
+
+      <button style={styles.button} onClick={resetCounter}>
+        Réinitialiser
+      </button>
+    </div>
+  );
+};
+
+// Styles en JS (facultatif mais sympa pour un petit projet)
+const styles = {
+  container: {
+    textAlign: 'center',
+    marginTop: '50px',
+    fontFamily: 'Arial, sans-serif',
+  },
+  button: {
+    margin: '10px',
+    padding: '10px 20px',
+    fontSize: '16px',
+    cursor: 'pointer',
+  },
+};
+
+export default Counter;</code></pre>
       <p>
-        C’est très utile quand on manipule des objets complexes ou des données venant d’une API.
+        C’est très utile quand on manipule des objets complexes ou des données venant d’une API.Apprendre React, ce n’est pas juste suivre une tendance : c’est investir dans une compétence durable. Que tu sois étudiant, développeur junior ou entrepreneur du web, c’est une technologie qui te servira.
+
+Le web évolue, mais React reste une valeur sûre pour créer vite, bien, et mieux.
       </p>
     </article>
   </main>
